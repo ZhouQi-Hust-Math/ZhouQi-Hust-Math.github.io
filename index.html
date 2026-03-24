@@ -3,93 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的 GitHub 主页</title>
-    <style>
-        /* 页面基础样式 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(120deg, #89f7fe, #66a6ff);
-            color: #333;
-            text-align: center;
-        }
-        header {
-            padding: 50px 20px;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2em;
-            color: #555;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            text-decoration: none;
-            color: white;
-            background: #0078d7;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 0 5px;
-            transition: background 0.3s;
-        }
-        nav a:hover {
-            background: #005a9e;
-        }
-        section {
-            max-width: 800px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            margin-top: 30px;
-            padding: 15px;
-            background: rgba(255,255,255,0.3);
-        }
-    </style>
+    <title>ZhouQi | Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="background-overlay"></div>
+    
+    <nav class="glass-nav">
+        <div class="logo">ZQ</div>
+        <ul class="nav-links">
+            <li><a href="#home">首页</a></li>
+            <li><a href="#about">关于</a></li>
+            <li><a href="#projects">项目</a></li>
+            <li><a href="#contact">联系</a></li>
+        </ul>
+    </nav>
 
-<header>
-    <h1>你好，我是 YourName 👋</h1>
-    <p>欢迎来到我的 GitHub 主页</p>
-</header>
+    <main>
+        <section id="home" class="hero section">
+            <div class="glass-card hero-content">
+                <h1 class="fade-in">Hi, I'm <span class="highlight">ZhouQi</span></h1>
+                <p class="fade-in delay-1">算法研究员 / 开发者 / 拓扑数据分析爱好者</p>
+                <div class="cta-buttons fade-in delay-2">
+                    <a href="#projects" class="btn btn-primary">查看我的工作</a>
+                    <a href="#contact" class="btn btn-secondary">取得联系</a>
+                </div>
+            </div>
+        </section>
 
-<nav>
-    <a href="https://github.com/YourGitHubUsername" target="_blank">GitHub</a>
-    <a href="#about">关于我</a>
-    <a href="#projects">项目</a>
-    <a href="#contact">联系</a>
-</nav>
+        <section id="about" class="section">
+            <div class="glass-card">
+                <h2>关于我</h2>
+                <p>我专注于算法研究，特别是在拓扑数据分析 (TDA) 和机器学习领域。我喜欢探索高维数据背后的结构，并将其可视化。</p>
+            </div>
+        </section>
 
-<section id="about">
-    <h2>关于我</h2>
-    <p>这里写你的个人简介，比如你的技能、兴趣、工作方向等。</p>
-</section>
+        <section id="projects" class="section">
+            <div class="glass-card">
+                <h2>精选项目</h2>
+                <div class="project-grid">
+                    <div class="project-item">
+                        <h3>TopoDataSyn</h3>
+                        <p>拓扑数据综合与分析工具。</p>
+                        <a href="#" class="project-link">查看详情 →</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Klein Bottle Immersion</h3>
+                        <p>克莱因瓶浸入式的深度学习训练与可视化。</p>
+                        <a href="#" class="project-link">查看详情 →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<section id="projects">
-    <h2>我的项目</h2>
-    <ul>
-        <li><a href="https://github.com/YourGitHubUsername/Project1" target="_blank">项目 1</a> - 项目简介</li>
-        <li><a href="https://github.com/YourGitHubUsername/Project2" target="_blank">项目 2</a> - 项目简介</li>
-    </ul>
-</section>
+        <section id="contact" class="section">
+            <div class="glass-card">
+                <h2>联系我</h2>
+                <p>如果你有任何有趣的项目或研究想法，欢迎随时通过 GitHub 或电子邮件与我联系。</p>
+                <div class="social-links">
+                    <a href="https://github.com/zhouqi" target="_blank" class="social-icon">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-<section id="contact">
-    <h2>联系我</h2>
-    <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
-</section>
+    <footer>
+        <p>&copy; 2026 ZhouQi. All rights reserved.</p>
+    </footer>
 
-<footer>
-    <p>© 2026 YourName | 由 HTML + CSS 构建</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>
